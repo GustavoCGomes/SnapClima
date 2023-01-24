@@ -1,0 +1,2 @@
+# SnapClima
+ Previsão do tempo
