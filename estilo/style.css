@@ -12,6 +12,11 @@ body {
   -webkit-font-smoothing: antialiased; /*deixa a font mais bonita*/
 }
 
+
+.header, .temperature-details, .sunset-sunrise {
+  max-width: 600px;
+  margin: 0 auto;
+}
 /* Header */
 
 .header {
@@ -146,7 +151,7 @@ body {
 
 .sunset-sunrise {
   display: flex;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .sunset-sunrise__item {
