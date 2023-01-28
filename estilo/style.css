@@ -12,7 +12,6 @@ body {
   -webkit-font-smoothing: antialiased; /*deixa a font mais bonita*/
 }
 
-
 .header, .temperature-details, .sunset-sunrise {
   max-width: 600px;
   margin: 0 auto;
@@ -77,6 +76,8 @@ body {
   font-size: 20px;
   margin-top: 6px;
 }
+
+/*Current temperature*/
 
 .current-temperature {
   display: flex;
@@ -160,3 +161,5 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* BEM- Block Element Modifier*/
