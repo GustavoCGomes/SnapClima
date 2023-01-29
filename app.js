@@ -59,7 +59,7 @@ function getCityWeather(cityName) { //Buscar localização e imagem do tempo
     .then((data) => displayWeather(data))
 } 
 
-function displayWeather(data) {
+function displayWeather(data) { //Buscar dados desejados
   let {
     dt,
     name,
