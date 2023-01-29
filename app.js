@@ -49,7 +49,7 @@ function getCurrentLocationWeather(lat, lon) { //Buscarr os dados da API
     .then((data) => displayWeather(data))
 }
 
-function getCityWeather(cityName) {
+function getCityWeather(cityName) { //Buscar localização e imagem do tempo
 
   weatherIcon.src = `imagens/assets/loading-icon.svg`; 
 
@@ -81,13 +81,13 @@ function displayWeather(data) {
   sunsetTime.textContent = formatTime(sunset);
 }
 
-function formatDate(epochTime) {
+function formatDate(epochTime) { // Conversão de formato de data
   let date = new Date(epochTime * 1000);
   let formattedDate = date.toLocaleDateString('pt-BR', { month: "long", day: 'numeric' })
   return `Hoje, ${formattedDate}`
 }
 
-function formatTime(epochTime) {
+function formatTime(epochTime) { // Converrsão de horas
   let date = new Date(epochTime * 1000);
   let hours = date.getHours();
   let minutes = date.getMinutes();
